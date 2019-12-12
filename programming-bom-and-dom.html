@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programming with the BOM and DOM</title>
+</head>
+
+<body>
+    <h1>JavaScript Fundamentals</h1>
+    <p id='first' class='p1'>First paragraph</p>
+    <p id="name1" class="p1">Second paragraph</p>
+    <p class="p3">Third paragraph</p>
+
+    <script>
+        // import {
+        //     Car
+        // } from '.models/car';
+        console.log('Timers');
+        let intervalId = setInterval(function() {
+            console.log('Hello, listen!');
+        }, 1);
+        clearInterval(intervalId);
+
+        year = 1956;
+        console.log(year);
+        console.log(innerWidth);
+
+        //Location Object
+        console.log(location.href);
+        console.log(document.location.href);
+
+
+        let el = document.getElementById('first');
+        console.log(el);
+
+        let p1s = document.getElementsByClassName('p1');
+        console.log(p1s);
+        console.log(p1s[0]);
+        console.log(p1s[1]);
+
+        let paragraphs = document.getElementsByTagName('p');
+        console.log(paragraphs);
+        console.log(paragraphs[0]);
+        console.log(paragraphs[1]);
+        console.log(paragraphs[2]);
+
+        el.textContent = "New content...";
+        el.setAttribute('foo', 'bar');
+        console.log(el);
+        el.classList.add('p2');
+        console.log(el);
+        el.style.color = 'green';
+    </script>
+</body>
+
+</html>
