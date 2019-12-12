@@ -39,19 +39,19 @@
                 avatarFile.focus();
             }
 
-            import $ from 'jquery';
-            let posting = {
-                user: user.value,
-                avatarFile: avatarFile.value
-            }
+            // import $ from 'jquery';
+            // let posting = {
+            //     user: user.value,
+            //     avatarFile: avatarFile.value
+            // }
 
-            let promise = $.post('', posting);
-            promise.then(
-                data => console.log('Success: ', data),
-                error => console.log("Error: ", error)
-            );
+            // let promise = $.post('', posting);
+            // promise.then(
+            //     data => console.log('Success: ', data),
+            //     error => console.log("Error: ", error)
+            // );
 
-            console.log(user.value, avatarFile.value);
+            // console.log(user.value, avatarFile.value);
             event.preventDefault();
         });
     </script>
